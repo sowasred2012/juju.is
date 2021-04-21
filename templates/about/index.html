@@ -7,6 +7,8 @@
 {% block meta_description %}Help DevSecOps and SREs manage complex hybrid clouds and the applications on them. Grow from config mgmt to app management and model-driven operations.{% endblock %}
 
 {% block content %}
+{% include 'about/_signup-success.html' %}
+
 <section class="p-strip">
   <div class="row">
     <div class="col-8">
@@ -82,17 +84,7 @@
       }}
       <h3 class="p-heading--4">Send us your details</h3>
       
-      <form class="marketo-form" action="https://pages.ubuntu.com/index.php/leadCapture/save" method="post" id="mktoForm_1337">
-        <label for="Email" class="mktoLabel">Email address:</label>
-        <input required id="Email" name="Email" maxlength="255" type="email" class="mktoField mktoEmailField mktoRequired" required="required" />
-        
-        <p class="p-form-help-text u-sv1">
-          You'll receive an email with a link to get your t-shirt.
-        </p> 
-
-        <button type="submit" class="p-button--positive u-no-margin--bottom mktoButton" aria-label="Submit">Get the eBook</button>
-      </form>
-      </div>
+      {% include 'about/_ebook-signup-form.html' %}
     </div>
   </div>
 </section>
